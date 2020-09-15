@@ -9,8 +9,10 @@ mv valid/*.jpg JPEGImages/
 mv train/*.jpg JPEGImages/
 mv test/*.jpg JPEGImages/
 
-rm test
-rm train
-rm valid
+rm -r test
+rm -r train
+rm -r valid
 
-python3 make_folders_and_files_for_pascal_voc.py
+python make_folder_and_files_for_pascal_voc.py
+
+nano labels.txt

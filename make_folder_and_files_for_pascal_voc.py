@@ -10,7 +10,7 @@ xmlfilepath = 'Annotations'
 txtsavepath = 'ImageSets/Main'
 total_xml = glob.glob(os.path.join(xmlfilepath, '*.xml'))
 
-Path(txtsavepath).mkdir(parents=True, exist_ok=True)
+Path(txtsavepath).mkdir(parents=True)
 
 num=len(total_xml)
 list=range(num)
